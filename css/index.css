@@ -203,6 +203,9 @@ header nav a {
   text-decoration: none;
   color: mistyrose;
 }
+header nav a:hover {
+  color: white;
+}
 body {
   background: url("../img/robert-katzki-fyHkeWGOpHM-unsplash.jpg");
   background-position: center;
@@ -276,4 +279,7 @@ body footer {
 body footer a {
   text-decoration: none;
   color: mistyrose;
+}
+body footer a:hover {
+  color: white;
 }
