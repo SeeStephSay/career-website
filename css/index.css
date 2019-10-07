@@ -1,3 +1,11 @@
+.display-flex {
+  display: flex;
+  justify-content: center;
+}
+.display-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
     License: none (public domain)
@@ -135,6 +143,7 @@ html {
 html,
 body {
   font-family: 'Raleway', sans-serif;
+  color: mistyrose;
 }
 h1,
 h2,
@@ -169,23 +178,97 @@ img {
   margin: 0 auto;
 }
 header {
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
+  background: salmon;
+  margin: 5vh 0;
+  border: 4px solid mistyrose;
 }
 header h1 {
   width: 48%;
+  padding: 0 0 1.5vh 0;
+  text-align: center;
 }
 header nav {
   width: 48%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  text-align: center;
 }
-header .image {
-  width: 100%;
-}
-header .image img {
-  width: 50%;
-  height: 50%;
+header nav a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: mistyrose;
 }
 body {
-  background-image: url("../img/robert-katzki-fyHkeWGOpHM-unsplash.jpg");
+  background: url("../img/robert-katzki-fyHkeWGOpHM-unsplash.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+body main section {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2%;
+}
+body main #about {
+  width: 100%;
+  border: 4px solid mistyrose;
+}
+body main #about .half-width {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+body main #about .half-width p {
+  margin: 2% 0 0 10%;
+  text-align: center;
+}
+body main #about .half-width img {
+  height: 100%;
+  width: 50%;
+  border: 2px solid mistyrose;
+  border-radius: 40%;
+}
+body main #work {
+  width: 100%;
+  border: 4px solid mistyrose;
+  flex-wrap: wrap;
+}
+body main #work h2 {
+  margin-top: 2%;
+}
+body main #work .third-width {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2%;
+}
+body main #work .third-width p {
+  margin: 1%;
+  text-align: center;
+}
+body main #contact {
+  width: 100%;
+  border: 4px solid mistyrose;
+}
+body main #contact h2 {
+  margin: 1% 0 0 0;
+}
+body main #contact i {
+  font-size: 4rem;
+  align-self: center;
+}
+body footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body footer a {
+  text-decoration: none;
+  color: mistyrose;
 }
