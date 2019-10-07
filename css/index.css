@@ -260,9 +260,13 @@ body main #contact {
 body main #contact h2 {
   margin: 1% 0 0 0;
 }
+body main #contact a {
+  text-decoration: none;
+  color: mistyrose;
+  align-self: center;
+}
 body main #contact i {
   font-size: 4rem;
-  align-self: center;
 }
 body footer {
   display: flex;
