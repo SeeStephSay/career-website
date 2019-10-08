@@ -4,11 +4,21 @@ header {
     background: @nav;
     margin: 5vh 0 5vh 2.8vh;
     border: 4px solid @font-color;
+    @media @tablet {
+        margin-left: 2%;
+    }
+    @media @mobile {
+        flex-direction: column;
+        // width: 95%;
+    }
     h1 {
         width: 50%;
         padding: 0 0 1.5vh 0;
         text-align: center;
         // border: 1px solid green;
+        @media @mobile {
+            align-self: center;
+        }
     }
     nav {
         width: 50%;
@@ -16,11 +26,19 @@ header {
         .display-evenly();
         align-self: center;
         text-align: center;
+        @media @mobile {
+            flex-direction: column;
+        }
         a {
             font-size: 2rem;
             text-decoration: none;
             color: @font-color;
             // border: 1px solid grey;
+            @media @mobile {
+                margin: 2%;
+                padding: 3%;
+                border: 1px solid @font-color;
+            }
             &:hover {
                 color: white;
             }
