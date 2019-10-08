@@ -249,14 +249,14 @@ body main section {
   justify-content: space-evenly;
   margin: 2%;
 }
-@media (max-width: 500px) {
-  body main section {
-    flex-direction: column;
-  }
-}
 body main #about {
   width: 100%;
   border: 4px solid mistyrose;
+}
+@media (max-width: 500px) {
+  body main #about {
+    flex-direction: column;
+  }
 }
 body main #about .half-width {
   padding: 2.5%;
@@ -334,21 +334,39 @@ body main #contact {
   width: 100%;
   border: 4px solid mistyrose;
 }
-@media (max-width: 500px) {
-  body main #contact {
-    text-align: center;
-  }
-}
 body main #contact h2 {
   margin: 1% 0 0 0;
 }
-body main #contact a {
-  text-decoration: none;
-  color: mistyrose;
+@media (max-width: 500px) {
+  body main #contact h2 {
+    width: 60%;
+    padding-top: 1%;
+    font-size: 2.2rem;
+  }
+}
+body main #contact #links {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
   align-self: center;
 }
-body main #contact i {
+@media (max-width: 500px) {
+  body main #contact #links {
+    width: 35%;
+  }
+}
+body main #contact #links a {
+  text-decoration: none;
+  color: mistyrose;
+}
+body main #contact #links a i {
   font-size: 4rem;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  body main #contact #links a i {
+    font-size: 2.3rem;
+  }
 }
 body footer {
   display: flex;

@@ -11,13 +11,13 @@ body {
         section {
             .display-evenly();
             margin: 2%;
-            @media @mobile {
-                flex-direction: column;
-            }
         }
         #about {
             width: 100%;
             border: 4px solid @font-color;
+            @media @mobile {
+                flex-direction: column;
+            }
             .half-width {
                 padding: 2.5%;
                 .display-evenly();
@@ -88,20 +88,34 @@ body {
         #contact {
             width: 100%;
             border: 4px solid @font-color;
-            @media @mobile {
-                text-align: center;
-            }
             h2 {
                 margin: 1% 0 0 0;
+                @media @mobile {
+                    width: 60%;
+                    padding-top: 1%;
+                    font-size: 2.2rem;
+                }
             }
-            a {
-                text-decoration: none;
-                color: @font-color;
+            #links {
+                width: 50%;
+                .display-evenly();
                 align-self: center;
-            }
-            i {
-                font-size: 4rem;
-                // border: 1px solid grey;
+                // border: 1px solid green;
+                @media @mobile {
+                width: 35%;
+                }
+                a {
+                    text-decoration: none;
+                    color: @font-color;
+                    i {
+                        font-size: 4rem;
+                        // border: 1px solid grey;
+                        padding: 2%;
+                        @media @mobile {
+                            font-size: 2.3rem;
+                        }
+                    }
+                }
             }
         }
     }
